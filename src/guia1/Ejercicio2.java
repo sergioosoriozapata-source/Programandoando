@@ -2,8 +2,6 @@ package guia1;
 
 import javax.swing.JOptionPane ;
 
-
-
 public class Ejercicio2 {
 
     public void IngresoDatos () {

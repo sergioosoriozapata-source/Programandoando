@@ -1,5 +1,6 @@
 package guia1;
 
+import javax.swing.JOptionPane;
 
 public class Ejercicio25{
     public void NumeroMenor(){
@@ -12,6 +13,6 @@ public class Ejercicio25{
                 menor = numeros[i];
             }
         }
-        System.out.println("El número menor del arreglo es: " + menor);
+          JOptionPane.showMessageDialog(null,"El número menor del arreglo es: " + menor);
     }
 }

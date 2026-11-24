@@ -1,11 +1,13 @@
 package guia1;
 
+import javax.swing.JOptionPane;
+
 public class Ejercicio22 {
-	public static void main(String[] args) {
+	public void ArregloDe10Numeros() {
 		int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-		for (int i = 0; i < numeros.length; i++) {
-			System.out.println(numeros[i]);
-		}
+        for (int i = 0; i < numeros.length; i++) {
+            JOptionPane.showMessageDialog(null, numeros[i]);
+        }
 	}
 }

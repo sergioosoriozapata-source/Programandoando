@@ -1,8 +1,9 @@
-package src.guia1;
+package guia1;
 
 import javax.swing.JOptionPane;
 
 public class Ejercicio3 {
+    
     public void ValidarEdad() {
         int edad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese su edad: "));
 

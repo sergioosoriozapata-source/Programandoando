@@ -1,6 +1,6 @@
 package guia1;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /*
 Calcular el factorial de un numero almacenado en una variable usando un ciclo for.
@@ -10,22 +10,24 @@ public class Ejercicio21 {
     
     public void Factorial() {
 
-        System.out.println ("==========================================") ;
-        System.out.println ("== Ingreso al Ejercicio 21 de la Guia 1 ==") ;
-        System.out.println ("==========================================") ;
+        JOptionPane.showMessageDialog(null, 
+            "==========================================\n" +
+            "== Ingreso al Ejercicio 21 de la Guia 1 ==\n" +
+            "==========================================");
 
-        Scanner scanner = new Scanner(System.in) ;
-
-        System.out.println ("Ingrese el numero para sacar su factorial -> ") ;
-        int NumeroFactorial= scanner.nextInt() ;
+        int numeroFactorial = Integer.parseInt(
+            JOptionPane.showInputDialog("Ingrese el numero para sacar su factorial:")
+        );
         
-        int Resultado = 1 ;
+        int resultado = 1;
 
-        for(int i = 1 ; i <= NumeroFactorial ; i ++){
-            Resultado *= i ;
+        for (int i = 1; i <= numeroFactorial; i++) {
+            resultado *= i;
         }
-        System.out.println("El factorial de " + NumeroFactorial + " es -> " + Resultado) ;
 
-        scanner.close() ;
+        JOptionPane.showMessageDialog(null, 
+            "El factorial de " + numeroFactorial + " es -> " + resultado, 
+            "Resultado Factorial", 
+            JOptionPane.INFORMATION_MESSAGE);
     }
 }

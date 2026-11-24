@@ -1,4 +1,4 @@
-package src.guia1;
+package guia1;
 
 import java.util.Arrays;
 
